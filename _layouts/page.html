@@ -2,10 +2,5 @@
 layout: default
 ---
 
-<div class="post">
-
-  <article class="post-content fullwidth">
-    {{ content }}
-  </article>
-
-</div>
+{% assign lang = site.data.languages[site.language] %}
+{% include page.html %}
